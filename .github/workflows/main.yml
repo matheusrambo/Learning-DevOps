@@ -50,11 +50,12 @@ jobs:
         with:
           method: kubeconfig
           kubeconfig: ${{secrets.K8S_CONFIG}}
+      
       - name: Deploy to Kubernetes cluster
         uses: Azure/k8s-deploy@v3.1
         with:
           images: rambo97/kube-news:${{github.run_number}}
           manifests: |
-            k8s/deployment.yaml
+            ./github actions + Pipeline/kube-news/k8s/deployment.yaml
         
         
