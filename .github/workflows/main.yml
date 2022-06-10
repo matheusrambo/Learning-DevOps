@@ -37,8 +37,8 @@ jobs:
           context: ./github actions + Pipeline/kube-news/src
           push: true
           tags:
-            matheusrambo/kube-news:latest
-            matheusrambo/kube-news:${{github.run_number}}
+            rambo97/kube-news:latest
+            rambo97/kube-news:${{github.run_number}}
         
         
         
